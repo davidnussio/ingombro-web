@@ -62,14 +62,20 @@ export function Screenshots() {
         </div>
 
         <div className="relative">
-          {/* Main Image */}
+          {/* All images stacked — crossfade via opacity */}
           <div className="relative aspect-[16/10] overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--card)]">
-            <Image
-              src={screenshots[current].src}
-              alt={screenshots[current].alt}
-              fill
-              className="object-contain"
-            />
+            {screenshots.map((shot, index) => (
+              <Image
+                key={shot.src}
+                src={shot.src}
+                alt={shot.alt}
+                fill
+                className={`object-contain transition-opacity duration-500 ease-in-out ${
+                  index === current ? "opacity-100" : "opacity-0"
+                }`}
+                priority={index === 0}
+              />
+            ))}
           </div>
 
           {/* Navigation Arrows */}
@@ -88,8 +94,8 @@ export function Screenshots() {
             <ChevronRight className="h-6 w-6" />
           </button>
 
-          {/* Caption */}
-          <div className="mt-4 text-center">
+          {/* Caption with fade */}
+          <div className="mt-4 text-center transition-opacity duration-300">
             <h3 className="text-lg font-semibold text-[var(--foreground)]">
               {screenshots[current].title}
             </h3>
