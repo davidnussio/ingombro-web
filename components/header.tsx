@@ -11,6 +11,7 @@ function GitHubIcon({ className }: { className?: string }) {
   );
 }
 import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +20,7 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--primary)]">
-            <span className="text-sm font-bold text-[var(--primary-foreground)]">I</span>
-          </div>
+          <Image src="/images/icon.png" alt="Ingombro" width={32} height={32} className="rounded-lg" />
           <span className="text-lg font-semibold text-[var(--foreground)]">Ingombro</span>
         </Link>
 
@@ -83,6 +82,7 @@ export function Header() {
             <Link
               href="https://github.com/davidnussio/ingombro"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-[var(--muted-foreground)]"
             >
               <GitHubIcon className="h-4 w-4" />

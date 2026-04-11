@@ -8,15 +8,14 @@ function GitHubIcon({ className }: { className?: string }) {
   );
 }
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
     <footer className="border-t border-[var(--border)] px-6 py-8">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 md:flex-row">
         <div className="flex items-center gap-2">
-          <div className="flex h-6 w-6 items-center justify-center rounded bg-[var(--primary)]">
-            <span className="text-xs font-bold text-[var(--primary-foreground)]">I</span>
-          </div>
+          <Image src="/images/icon.png" alt="Ingombro" width={24} height={24} className="rounded" />
           <span className="text-sm text-[var(--muted-foreground)]">
             Ingombro - Disk Space Analyzer for macOS
           </span>

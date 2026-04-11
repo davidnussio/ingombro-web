@@ -13,7 +13,11 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ingombro - Disk Space Analyzer for macOS",
+  metadataBase: new URL("https://ingombro.dev"),
+  title: {
+    default: "Ingombro - Disk Space Analyzer for macOS",
+    template: "%s | Ingombro",
+  },
   description:
     "Analyze disk space and clean up unnecessary directories. Interactive treemap visualization with Smart Clean to remove node_modules, build caches, and more.",
   keywords: [
@@ -24,13 +28,56 @@ export const metadata: Metadata = {
     "cleanup",
     "treemap",
     "developer tools",
+    "disk usage",
+    "storage cleaner",
+    "mac cleaner",
+    "homebrew",
+    "smart clean",
   ],
   authors: [{ name: "David Nussio" }],
+  creator: "David Nussio",
+  publisher: "David Nussio",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Ingombro - Disk Space Analyzer for macOS",
     description:
       "Analyze disk space and clean up unnecessary directories with interactive treemap visualization.",
+    url: "https://ingombro.dev",
+    siteName: "Ingombro",
+    images: [
+      {
+        url: "/images/ingombro-1.png",
+        width: 1200,
+        height: 750,
+        alt: "Ingombro - Disk Space Analyzer for macOS",
+      },
+    ],
+    locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ingombro - Disk Space Analyzer for macOS",
+    description:
+      "Analyze disk space and clean up unnecessary directories with interactive treemap visualization.",
+    images: ["/images/ingombro-1.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/images/icon.png",
+    apple: "/images/icon.png",
   },
 };
 

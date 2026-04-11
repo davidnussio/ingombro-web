@@ -55,7 +55,10 @@ export function Install() {
               </button>
             </div>
             <p className="mt-4 text-xs text-[var(--muted-foreground)]">
-              Use <code className="rounded bg-[var(--secondary)] px-1">--no-quarantine</code> flag if macOS blocks the app.
+              If macOS blocks the app, reinstall with:{" "}
+              <code className="rounded bg-[var(--secondary)] px-1">
+                HOMEBREW_CASK_OPTS=&quot;--no-quarantine&quot; brew reinstall --cask davidnussio/tap/ingombro
+              </code>
             </p>
           </div>
 

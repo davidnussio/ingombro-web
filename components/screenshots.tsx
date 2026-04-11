@@ -70,10 +70,12 @@ export function Screenshots() {
                 src={shot.src}
                 alt={shot.alt}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 960px"
                 className={`object-contain transition-opacity duration-500 ease-in-out ${
                   index === current ? "opacity-100" : "opacity-0"
                 }`}
                 priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
               />
             ))}
           </div>
