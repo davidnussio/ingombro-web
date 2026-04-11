@@ -28,7 +28,7 @@ const jsonLd = {
   downloadUrl:
     "https://github.com/davidnussio/ingombro/releases/download/v1.0.0/stable-macos-arm64-Ingombro.dmg",
   softwareVersion: "1.0.0",
-  url: "https://ingombro.dev",
+  url: "https://ingombro.dambox.ch",
 };
 
 export default function Home() {

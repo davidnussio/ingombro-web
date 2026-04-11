@@ -13,7 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ingombro.dev"),
+  metadataBase: new URL("https://ingombro.dambox.ch"),
   title: {
     default: "Ingombro - Disk Space Analyzer for macOS",
     template: "%s | Ingombro",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "Ingombro - Disk Space Analyzer for macOS",
     description:
       "Analyze disk space and clean up unnecessary directories with interactive treemap visualization.",
-    url: "https://ingombro.dev",
+    url: "https://ingombro.dambox.ch",
     siteName: "Ingombro",
     images: [
       {

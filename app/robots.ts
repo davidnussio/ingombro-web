@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://ingombro.dev/sitemap.xml",
+    sitemap: "https://ingombro.dambox.ch/sitemap.xml",
   };
 }
