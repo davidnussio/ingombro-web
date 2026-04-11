@@ -71,13 +71,11 @@ export function Install() {
               </div>
             </div>
             <a
-              href="https://github.com/davidnussio/ingombro/releases"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://github.com/davidnussio/ingombro/releases/download/v1.0.0/stable-macos-arm64-Ingombro.dmg"
               className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-[var(--border)] bg-[var(--background)] px-4 py-3 text-sm font-medium text-[var(--foreground)] transition-colors hover:bg-[var(--secondary)]"
             >
               <Download className="h-4 w-4" />
-              Download Latest Release
+              Download .dmg (Apple Silicon)
             </a>
             <p className="mt-4 text-xs text-[var(--muted-foreground)]">
               Drag the app into Applications folder after downloading.

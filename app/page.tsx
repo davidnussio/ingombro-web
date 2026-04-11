@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
+import { Screenshots } from "@/components/screenshots";
 import { Features } from "@/components/features";
 import { SmartClean } from "@/components/smart-clean";
 import { Install } from "@/components/install";
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <Screenshots />
       <Features />
       <SmartClean />
       <Install />
