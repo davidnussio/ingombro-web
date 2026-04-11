@@ -6,39 +6,39 @@ import Image from "next/image";
 
 const screenshots = [
   {
-    src: "https://raw.githubusercontent.com/davidnussio/ingombro/refs/heads/main/docs/00-home.png",
+    src: "/images/ingombro-1.png",
     alt: "Ingombro Home Screen",
     title: "Home Screen",
     description: "Clean interface to start scanning any directory"
   },
   {
-    src: "https://raw.githubusercontent.com/davidnussio/ingombro/refs/heads/main/docs/01-treemap.png",
+    src: "/images/ingombro-3.png",
     alt: "Interactive Treemap",
-    title: "Interactive Treemap",
+    title: "Treemap & Directory List",
     description: "Proportional visualization of disk usage with drill-down navigation"
   },
   {
-    src: "https://raw.githubusercontent.com/davidnussio/ingombro/refs/heads/main/docs/02-autocomplete.png",
+    src: "/images/ingombro-2.png",
     alt: "Path Autocomplete",
     title: "Path Autocomplete",
     description: "Instant directory suggestions with ~ expansion support"
   },
   {
-    src: "https://raw.githubusercontent.com/davidnussio/ingombro/refs/heads/main/docs/03-preview.png",
+    src: "/images/ingombro-6.png",
     alt: "File Preview",
-    title: "File Preview",
-    description: "Detailed info panel with size, dates, and file type distribution"
+    title: "File & Folder Preview",
+    description: "Detailed info panel with size, dates, largest file, file type distribution, and previews"
   },
   {
-    src: "https://raw.githubusercontent.com/davidnussio/ingombro/refs/heads/main/docs/04-smart-clean-all.png",
+    src: "/images/ingombro-4.png",
     alt: "Smart Clean All Items",
     title: "Smart Clean",
     description: "Automatic detection of removable folders across your projects"
   },
   {
-    src: "https://raw.githubusercontent.com/davidnussio/ingombro/refs/heads/main/docs/05-smart-clean-filtered.png",
+    src: "/images/ingombro-5.png",
     alt: "Smart Clean Filtered",
-    title: "Smart Clean Filtered",
+    title: "Smart Clean — Filtered",
     description: "Filter by project type and select items to clean"
   }
 ];
@@ -69,7 +69,6 @@ export function Screenshots() {
               alt={screenshots[current].alt}
               fill
               className="object-contain"
-              unoptimized
             />
           </div>
 
