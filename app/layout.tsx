@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     siteName: "Ingombro",
     images: [
       {
-        url: "/images/ingombro-1.png",
+        url: "/images/og.png",
         width: 1200,
-        height: 750,
+        height: 830,
         alt: "Ingombro - Disk Space Analyzer for macOS",
       },
     ],
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Ingombro - Disk Space Analyzer for macOS",
     description:
       "Analyze disk space and clean up unnecessary directories with interactive treemap visualization.",
-    images: ["/images/ingombro-1.png"],
+    images: ["/images/og.png"],
   },
   robots: {
     index: true,

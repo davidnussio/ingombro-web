@@ -6,40 +6,46 @@ import Image from "next/image";
 
 const screenshots = [
   {
-    src: "/images/ingombro-1.png",
-    alt: "Ingombro Home Screen",
-    title: "Home Screen",
-    description: "Clean interface to start scanning any directory"
-  },
-  {
-    src: "/images/ingombro-3.png",
-    alt: "Interactive Treemap",
+    src: "/images/screenshots/treemap.webp",
+    alt: "Ingombro's interactive treemap showing the space used by each project in the Developer folder",
     title: "Treemap & Directory List",
     description: "Proportional visualization of disk usage with drill-down navigation"
   },
   {
-    src: "/images/ingombro-2.png",
-    alt: "Path Autocomplete",
-    title: "Path Autocomplete",
-    description: "Instant directory suggestions with ~ expansion support"
-  },
-  {
-    src: "/images/ingombro-6.png",
-    alt: "File Preview",
-    title: "File & Folder Preview",
-    description: "Detailed info panel with size, dates, largest file, file type distribution, and previews"
-  },
-  {
-    src: "/images/ingombro-4.png",
-    alt: "Smart Clean All Items",
+    src: "/images/screenshots/smart-clean.webp",
+    alt: "Ingombro's Smart Clean: node_modules, .venv, target and .next folders to remove, each with a risk level",
     title: "Smart Clean",
-    description: "Automatic detection of removable folders across your projects"
+    description: "Automatic detection of removable folders across your projects, each with a risk level"
   },
   {
-    src: "/images/ingombro-5.png",
-    alt: "Smart Clean Filtered",
-    title: "Smart Clean — Filtered",
-    description: "Filter by project type and select items to clean"
+    src: "/images/screenshots/details.webp",
+    alt: "Folder details in Ingombro: size, files, largest file and type distribution",
+    title: "Folder Details",
+    description: "Size, dates, largest file and file type distribution of the selected folder"
+  },
+  {
+    src: "/images/screenshots/home.webp",
+    alt: "Ingombro's start screen: pick a folder to analyze, with recent scans and space freed",
+    title: "Start Screen",
+    description: "Pick a folder to analyze, with recent scans and the space freed so far"
+  },
+  {
+    src: "/images/screenshots/tui-overview.webp",
+    alt: "ingombro-cli in the terminal: folders sorted by size with proportional bars, next to Smart Clean and the details of the selected folder",
+    title: "ingombro-cli",
+    description: "The same analyzer in the terminal: folders by size, Smart Clean and details side by side"
+  },
+  {
+    src: "/images/screenshots/tui-smart-clean.webp",
+    alt: "Smart Clean in ingombro-cli: node_modules, .venv, target and .next folders selected, with the project, type and risk of the current item",
+    title: "Smart Clean in the Terminal",
+    description: "Mark folders from the keyboard and see the project, type and risk of each one"
+  },
+  {
+    src: "/images/screenshots/tui-clean-confirm.webp",
+    alt: "Smart Clean confirmation in ingombro-cli: folders to move to the Trash, each with its path and size",
+    title: "Move to Trash",
+    description: "Review every path and size before the folders go to the Trash"
   }
 ];
 
